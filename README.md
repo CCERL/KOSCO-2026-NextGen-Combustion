@@ -1,4 +1,4 @@
-# 한국연소학회 2026 Fall Tutorial — Day 3
+# 2026 한국연소학회 가을 튜토리얼 Next-Gen Combustion
 
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-12-1f6feb)
 
