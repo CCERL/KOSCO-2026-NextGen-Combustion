@@ -12,11 +12,11 @@ This repository provides a tutorial package for OpenFOAM-based flow and reacting
 
 ## Tutorial cases
 
-| Case | Description | Solver | Main features |
+| Case | Configuration | Solver / Framework | Tutorial focus |
 |---|---|---|---|
-| [`1.cavity`](./1.cavity) | 2-D lid-driven cavity | `incompressibleFluid` | Incompressible Navier–Stokes |
-| [`2.SandiaFlameD`](./2.SandiaFlameD) | Sandia Flame D | `multicomponentFluid` | Detailed chemistry, turbulent combustion |
-| [`3.counterFlowFlame`](./3.counterFlowFlame) | H₂/air counterflow flame | `DTLreactingFoam` | Detailed chemistry, detailed transport, laminar combustion |
+| [`01-cavity`](./Tutorial/01-cavity) | Two-dimensional lid-driven cavity flow | `incompressibleFluid` | Fundamentals of OpenFOAM case structure, boundary conditions, numerical discretization, and incompressible-flow simulation |
+| [`02-SandiaFlameD`](./Tutorial/02-SandiaFlameD) | Turbulent non-premixed Sandia Flame D | `multicomponentFluid` | Turbulent reacting-flow simulation with detailed gas-phase chemistry, species transport, and combustion-model setup |
+| [`03-counterFlowFlame`](./Tutorial/03-counterFlowFlame) | Laminar H₂/air counterflow diffusion flame | `DTLreactingFoam` | Laminar reacting-flow simulation with detailed chemistry and detailed transport using the `DTLreactingFoam` framework |
 
 ---
 
