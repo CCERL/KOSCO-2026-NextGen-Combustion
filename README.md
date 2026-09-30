@@ -3,8 +3,7 @@
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-12-1f6feb)
 ![License](https://img.shields.io/badge/license-GPL--3.0-yellow)
 
-![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cpc.2026.110052-red)
-
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cpc.2026.110052-red)](https://doi.org/10.1016/j.cpc.2026.110052)
 
 ## Overview
 OpenFOAM tutorial cases prepared for **Day 3 of the KOSCO 2026 Fall Tutorial**.
