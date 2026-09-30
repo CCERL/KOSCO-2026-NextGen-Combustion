@@ -12,7 +12,7 @@ This repository provides a tutorial package for OpenFOAM-based flow and reacting
 
 ## Tutorial cases
 
-| Case | Configuration | Solver / Framework | Tutorial focus |
+| Case | Configuration | Solver module | Tutorial focus |
 |---|---|---|---|
 | [`01-cavity`](./Tutorial/01-cavity) | Two-dimensional lid-driven cavity flow | `incompressibleFluid` | Fundamentals of OpenFOAM case structure, boundary conditions, numerical discretization, and incompressible-flow simulation |
 | [`02-SandiaFlameD`](./Tutorial/02-SandiaFlameD) | Turbulent non-premixed Sandia Flame D | `multicomponentFluid` | Turbulent reacting-flow simulation with detailed gas-phase chemistry, species transport, and combustion-model setup |
