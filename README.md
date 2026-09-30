@@ -1,6 +1,7 @@
 # 2026 한국연소학회 가을 튜토리얼 Next-Gen Combustion
 
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-12-1f6feb)
+[![License](https://img.shields.io/badge/license-GPL--3.0-yellow)]
 
 ## Overview
 OpenFOAM tutorial cases prepared for **Day 3 of the KOSCO 2026 Fall Tutorial**.
