@@ -1,4 +1,4 @@
-# KOSCO 2026 Fall Tutorial — Day 3
+# 한국연소학회 2026 Fall Tutorial — Day 3
 
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-12-1f6feb)
 
