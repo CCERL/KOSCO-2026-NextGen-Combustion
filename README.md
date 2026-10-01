@@ -26,23 +26,14 @@ Through these cases, users can learn the basic OpenFOAM case structure, simulati
 
 The tutorial cases are based on **OpenFOAM Foundation v12**.
 
-Make sure the OpenFOAM environment is loaded before running the cases:
-
-```bash
-foamVersion
-```
-The tutorial cases are based on OpenFOAM Foundation v12.
-
 In particular, follow the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/00_OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf) before proceeding with the tutorial cases.
 
 After completing the setup, verify that the OpenFOAM environment is loaded:
 
+```bash
 foamVersion
-
-The first two tutorial cases use solvers and models included in the standard OpenFOAM 12 distribution. The third case requires the custom DTLreactingFoam framework.
-
-
-The first two cases use solvers and models available in the standard OpenFOAM 12 environment.
+```
+---
 
 > **Note**
 >
