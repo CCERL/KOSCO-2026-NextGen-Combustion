@@ -33,7 +33,7 @@ foamVersion
 ```
 The tutorial cases are based on OpenFOAM Foundation v12.
 
-Before starting the tutorials, complete the environment setup described in the Documentation/Prerequisites directory. In particular, follow the 00_OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드 to install and configure OpenFOAM 12 and DTLreactingFoam.
+In particular, follow the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/00_OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf) before proceeding with the tutorial cases.
 
 After completing the setup, verify that the OpenFOAM environment is loaded:
 
