@@ -24,11 +24,11 @@ Through these cases, users can learn the basic OpenFOAM case structure, simulati
 
 ## Requirements
 
-These tutorial cases are developed for **OpenFOAM Foundation v12** and must be run in a Linux environment.
+These tutorials are developed for **OpenFOAM Foundation v12** and must be run in a Linux environment.
 
-Windows users should first install **Windows Subsystem for Linux (WSL)** to create a Linux environment on their computers. OpenFOAM Foundation v12 and the custom `DTLreactingFoam` framework must then be installed within WSL.
+Windows users must first install **Windows Subsystem for Linux (WSL)**. OpenFOAM Foundation v12 and the [`DTLreactingFoam-12`](https://github.com/danhnam11/DTLreactingFoam-12) framework should then be installed within the WSL environment. `DTLreactingFoam-12` is required to perform laminar reacting-flow simulations with detailed chemistry and multicomponent transport.
 
-Detailed instructions for setting up WSL, installing OpenFOAM 12, and configuring `DTLreactingFoam` are provided in the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/1.OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf). Complete the setup described in this guide before proceeding with the tutorial cases.
+Detailed instructions for setting up WSL, installing OpenFOAM 12, and configuring `DTLreactingFoam-12` are provided in the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/1.OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf). Complete the setup described in this guide before starting the tutorials.
 
 After completing the installation, open a WSL terminal and verify that the OpenFOAM environment is loaded:
 
@@ -36,18 +36,7 @@ After completing the installation, open a WSL terminal and verify that the OpenF
 foamVersion
 ```
 
-The command should report **OpenFOAM-12**. The first two tutorial cases use solver modules included in the standard OpenFOAM 12 distribution, while the third case requires the custom `DTLreactingFoam` framework.
-
----
-
-> **Note**
->
-> `3.counterFlowFlame` uses the custom `DTLreactingFoam` solver together with the detailed-transport models used in this tutorial.
-> A standard OpenFOAM 12 installation alone is therefore not sufficient to run Case 3.
->
-> Please install `DTLreactingFoam-12` before running this case:
->
-> https://github.com/danhnam11/DTLreactingFoam-12
+The command should report **OpenFOAM-12**.
 
 ---
 
