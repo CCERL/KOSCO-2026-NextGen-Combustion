@@ -8,7 +8,7 @@
 ## Overview
 This repository provides tutorial materials for incompressible and reacting-flow simulations using OpenFOAM. The tutorials cover a basic incompressible-flow simulation using `incompressibleFluid`, a turbulent Sandia Flame D simulation using the standard OpenFOAM module `multicomponentFluid`, and a laminar counterflow-flame simulation using the custom-developed `DTLreactingFoam` framework. 
 
-Through these cases, users can learn the basic OpenFOAM case structure, simulation setup, numerical workflow, and reacting-flow capabilities, as well as the application of DTLreactingFoam to detailed laminar flame simulations.
+Through these cases, users can learn the basic OpenFOAM case structure, simulation setup, numerical workflow, and reacting-flow capabilities, as well as the application of `DTLreactingFoam` to detailed laminar flame simulations.
 
 ---
 
@@ -16,8 +16,8 @@ Through these cases, users can learn the basic OpenFOAM case structure, simulati
 
 | Case | Configuration | Solver module | Tutorial focus |
 |---|---|---|---|
-| [`01-cavity`](./Tutorial/01-cavity) | Two-dimensional lid-driven cavity flow | `incompressibleFluid` | Fundamentals of OpenFOAM case structure, boundary conditions, numerical discretization, and incompressible-flow simulation |
-| [`02-SandiaFlameD`](./Tutorial/02-SandiaFlameD) | Turbulent non-premixed Sandia Flame D | `multicomponentFluid` | Turbulent reacting-flow simulation with detailed gas-phase chemistry, species transport, and combustion-model setup |
+| [`01-cavity`](./Tutorial/01-cavity) | 2D Lid-driven cavity flow | `incompressibleFluid` | Fundamentals of OpenFOAM case structure, boundary conditions, numerical discretization, and incompressible-flow simulation |
+| [`02-SandiaFlameD`](./Tutorial/02-SandiaFlameD) | Sandia Flame D | `multicomponentFluid` | Turbulent reacting-flow simulation with detailed gas-phase chemistry, species transport, and combustion-model setup |
 | [`03-counterFlowFlame`](./Tutorial/03-counterFlowFlame) | Laminar H₂/air counterflow diffusion flame | `DTLreactingFoam` | Laminar reacting-flow simulation with detailed chemistry and detailed transport using the `DTLreactingFoam` framework |
 
 ---
@@ -31,6 +31,16 @@ Make sure the OpenFOAM environment is loaded before running the cases:
 ```bash
 foamVersion
 ```
+The tutorial cases are based on OpenFOAM Foundation v12.
+
+Before starting the tutorials, complete the environment setup described in the Documentation/Prerequisites directory. In particular, follow the 00_OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드 to install and configure OpenFOAM 12 and DTLreactingFoam.
+
+After completing the setup, verify that the OpenFOAM environment is loaded:
+
+foamVersion
+
+The first two tutorial cases use solvers and models included in the standard OpenFOAM 12 distribution. The third case requires the custom DTLreactingFoam framework.
+
 
 The first two cases use solvers and models available in the standard OpenFOAM 12 environment.
 
