@@ -7,7 +7,7 @@ reactions
         A               1.2e+11;
         beta            -1;
         Ta              0;
-        coeffs
+        coeffs          
 36
 (
 (H2 2.4)
@@ -56,7 +56,7 @@ reactions
         A               5e+11;
         beta            -1;
         Ta              0;
-        coeffs
+        coeffs          
 36
 (
 (H2 2)
@@ -191,7 +191,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -401,7 +401,7 @@ reactions
         A               2.8e+12;
         beta            -0.86;
         Ta              0;
-        coeffs
+        coeffs          
 36
 (
 (H2 1)
@@ -490,7 +490,7 @@ reactions
         A               1e+12;
         beta            -1;
         Ta              0;
-        coeffs
+        coeffs          
 36
 (
 (H2 0)
@@ -563,7 +563,7 @@ reactions
         A               2.2e+16;
         beta            -2;
         Ta              0;
-        coeffs
+        coeffs          
 36
 (
 (H2 0.73)
@@ -678,7 +678,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -754,7 +754,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -830,7 +830,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -906,7 +906,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -974,7 +974,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1050,7 +1050,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1142,7 +1142,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1258,7 +1258,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1326,7 +1326,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1394,7 +1394,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1470,7 +1470,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1546,7 +1546,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1662,7 +1662,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1738,7 +1738,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -1878,7 +1878,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -2226,7 +2226,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -2358,7 +2358,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -2474,7 +2474,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -2622,7 +2622,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -2736,7 +2736,7 @@ reactions
         A               1.87e+14;
         beta            -1;
         Ta              8554.25106;
-        coeffs
+        coeffs          
 36
 (
 (H2 2)
@@ -2851,7 +2851,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -2983,7 +2983,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -3163,7 +3163,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -3287,7 +3287,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -3395,7 +3395,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -3471,7 +3471,7 @@ reactions
         }
         thirdBodyEfficiencies
         {
-            coeffs
+            coeffs          
 36
 (
 (H2 2)
@@ -3557,3 +3557,4 @@ reactions
 }
 Tlow            250;
 Thigh           5000;
+
