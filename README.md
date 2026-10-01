@@ -72,7 +72,7 @@ git pull
 
 ## 1. Lid-Driven Cavity
 
-[`1.Cavity`](./1.Cavity) is a compact introductory case for reviewing the basic structure of an OpenFOAM simulation.
+[`1.Cavity`](Tutorial/1.Cavity) is a compact introductory case for reviewing the basic structure of an OpenFOAM simulation.
 
 The domain is a **2-D square cavity**. The upper wall moves in the positive x-direction while the remaining walls are stationary.
 
@@ -89,7 +89,7 @@ foamRun
 
 ## 2. Sandia Flame D
 
-[`2.SandiaFlameD`](./2.SandiaFlameD) introduces a reacting-flow calculation based on the well-known **Sandia Flame D** configuration.
+[`2.SandiaFlameD`](Tutorial/2.SandiaFlameD) introduces a reacting-flow calculation based on the well-known **Sandia Flame D** configuration.
 
 The case uses an axisymmetric wedge mesh with separate methane-fuel, pilot, and coflow-air inlets.
 
@@ -120,7 +120,7 @@ rm -r processor*
 
 ## 3. H₂/Air Counterflow Flame
 
-[`3.CounterFlowFlame`](./3.CounterFlowFlame) is an opposed-flow reacting case in which a hydrogen-containing fuel stream and an air stream enter from opposite sides of the domain.
+[`3.CounterFlowFlame`](Tutorial/3.CounterFlowFlame) is an opposed-flow reacting case in which a hydrogen-containing fuel stream and an air stream enter from opposite sides of the domain.
 
 The supplied inlet velocities are:
 ```text
