@@ -72,7 +72,7 @@ git pull
 
 ## 1. Lid-Driven Cavity
 
-[`1.cavity`](./1.cavity) is a compact introductory case for reviewing the basic structure of an OpenFOAM simulation.
+[`1.Cavity`](./1.Cavity) is a compact introductory case for reviewing the basic structure of an OpenFOAM simulation.
 
 The domain is a **2-D square cavity**. The upper wall moves in the positive x-direction while the remaining walls are stationary.
 
@@ -120,7 +120,7 @@ rm -r processor*
 
 ## 3. H₂/Air Counterflow Flame
 
-[`3.counterFlowFlame`](./3.counterFlowFlame) is an opposed-flow reacting case in which a hydrogen-containing fuel stream and an air stream enter from opposite sides of the domain.
+[`3.CounterFlowFlame`](./3.CounterFlowFlame) is an opposed-flow reacting case in which a hydrogen-containing fuel stream and an air stream enter from opposite sides of the domain.
 
 The supplied inlet velocities are:
 ```text
