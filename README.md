@@ -28,7 +28,7 @@ These tutorials are developed for **OpenFOAM Foundation v12** and must be run in
 
 Windows users must first install **Windows Subsystem for Linux (WSL)**. OpenFOAM Foundation v12 and the [`DTLreactingFoam-12`](https://github.com/danhnam11/DTLreactingFoam-12) framework should then be installed within the WSL environment. `DTLreactingFoam-12` is required to perform laminar reacting-flow simulations with detailed chemistry and multicomponent transport.
 
-Detailed instructions for setting up WSL, installing OpenFOAM 12, and configuring `DTLreactingFoam-12` are provided in the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/1.OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf). Complete the setup described in this guide before starting the tutorials.
+Detailed instructions for setting up WSL, installing OpenFOAM 12, and building `DTLreactingFoam-12` are provided in the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/1.OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf). Complete the setup described in this guide before starting the tutorials.
 
 After completing the installation, open a WSL terminal and verify that the OpenFOAM environment is loaded:
 
