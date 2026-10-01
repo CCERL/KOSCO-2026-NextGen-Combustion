@@ -24,15 +24,20 @@ Through these cases, users can learn the basic OpenFOAM case structure, simulati
 
 ## Requirements
 
-The tutorial cases are based on **OpenFOAM Foundation v12**.
+These tutorial cases are developed for **OpenFOAM Foundation v12** and must be run in a Linux environment.
 
-In particular, follow the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/00_OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf) before proceeding with the tutorial cases.
+Windows users should first install **Windows Subsystem for Linux (WSL)** to create a Linux environment on their computers. OpenFOAM Foundation v12 and the custom `DTLreactingFoam` framework must then be installed within WSL.
 
-After completing the setup, verify that the OpenFOAM environment is loaded:
+Detailed instructions for setting up WSL, installing OpenFOAM 12, and configuring `DTLreactingFoam` are provided in the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/00_OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf). Complete the setup described in this guide before proceeding with the tutorial cases.
+
+After completing the installation, open a WSL terminal and verify that the OpenFOAM environment is loaded:
 
 ```bash
 foamVersion
 ```
+
+The command should report **OpenFOAM-12**. The first two tutorial cases use solver modules included in the standard OpenFOAM 12 distribution, while the third case requires the custom `DTLreactingFoam` framework.
+
 ---
 
 > **Note**
