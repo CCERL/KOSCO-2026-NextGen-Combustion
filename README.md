@@ -58,14 +58,8 @@ The recommended location is your OpenFOAM run directory:
 ```bash
 mkdir -p $FOAM_RUN
 cd $FOAM_RUN
-git clone https://github.com/CCERL/KOSCO_2026_Fall_Tutorial.git
-cd KOSCO_2026_Fall_Tutorial
-```
-
-To update an existing copy:
-
-```bash
-git pull
+git clone https://github.com/CCERL/KOSCO-2026-NextGen-Combustion.git
+cd KOSCO-2026-NextGen-Combustion
 ```
 
 ---
@@ -82,9 +76,7 @@ The simulation is performed using standard `incompressibleFluid` module in OpenF
 
 ```bash
 cd 1.cavity
-
-blockMesh
-foamRun
+./Allrun
 ```
 
 ## 2. Sandia Flame D
@@ -99,23 +91,7 @@ The simulation is performed using standard `multicomponentFluid` module in OpenF
 
 ```bash
 cd 2.SandiaFlameD
-
-blockMesh
-setFields
-foamRun
-```
-
-For parallel execution, use the supplied decomposition settings:
-
-```bash
-cd 2.SandiaFlameD
-
-blockMesh
-setFields
-decomposePar
-mpirun -np 4 foamRun -parallel
-reconstructPar
-rm -r processor*
+./Allrun
 ```
 
 ## 3. H₂/Air Counterflow Flame
