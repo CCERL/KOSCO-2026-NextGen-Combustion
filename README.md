@@ -16,9 +16,9 @@ Through these cases, users can learn the basic OpenFOAM case structure, simulati
 
 | Case | Flow configuration | Solver | Key topics |
 |---|---|---|---|
-| [01 Cavity](Tutorial/01-cavity) | 2-D lid-driven cavity | `incompressibleFluid` | Case structure, boundary conditions, and numerical schemes |
-| [02 Sandia Flame D](Tutorial/02-SandiaFlameD) | Turbulent nonpremixed flame | `multicomponentFluid` | Gas-phase chemistry, species transport, and combustion modeling |
-| [03 Counterflow Flame](Tutorial/03-counterFlowFlame) | Laminar H₂/air counterflow flame | `DTLreactingFoam` | Detailed chemistry and multicomponent transport |
+| [1 Cavity](Tutorial/1.cavity) | 2-D lid-driven cavity | `incompressibleFluid` | Case structure, boundary conditions, and numerical schemes |
+| [2 Sandia Flame D](Tutorial/2.SandiaFlameD) | Turbulent nonpremixed flame | `multicomponentFluid` | Gas-phase chemistry, species transport, and combustion modeling |
+| [3 Counterflow Flame](Tutorial/3.counterFlowFlame) | Laminar H₂/air counterflow flame | `DTLreactingFoam` | Detailed chemistry and multicomponent transport |
 
 ---
 
