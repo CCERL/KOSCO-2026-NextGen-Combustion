@@ -75,7 +75,7 @@ The simulation is performed using standard `incompressibleFluid` module in OpenF
 ### Run
 
 ```bash
-cd 1.cavity
+cd 1.Cavity
 ./Allrun
 ```
 
@@ -120,10 +120,8 @@ The simulation is performed using custom `DTLreactingFoam` solver.
 ### Run
 
 ```bash
-cd 3.counterFlowFlame
-
-blockMesh
-foamRun
+cd 3.CounterFlowFlame
+./Allrun
 ```
 
 Parallel execution can be performed in the same way:
