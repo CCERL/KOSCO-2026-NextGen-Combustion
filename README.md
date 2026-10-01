@@ -6,7 +6,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cpc.2026.110052-red)](https://doi.org/10.1016/j.cpc.2026.110052)
 
 ## Overview
-This repository provides a tutorial package for OpenFOAM-based flow and reacting-flow simulations, designed to introduce the fundamental workflow of OpenFOAM and progressively extend it to turbulent and laminar reacting-flow applications. The tutorials cover a basic incompressible-flow simulation using `incompressibleFluid`, a turbulent reacting-flow simulation of the Sandia Flame D using the standard OpenFOAM framework, and a laminar counterflow-flame simulation using `DTLreactingFoam`. Through these cases, users can learn the basic structure, case setup, numerical workflow, and reacting-flow simulation capabilities of OpenFOAM, together with the application of the `DTLreactingFoam` framework for detailed laminar flame simulations.
+This repository provides tutorial materials for incompressible and reacting-flow simulations using OpenFOAM. The tutorials cover a basic incompressible-flow simulation using 'incompressibleFluid', a turbulent Sandia Flame D simulation using the standard OpenFOAM module 'multicomponentFluid', and a laminar counterflow-flame simulation using the custom-developed 'DTLreactingFoam' framework. Through these cases, users can learn the basic structure, case setup, numerical workflow, and reacting-flow simulation capabilities of OpenFOAM, together with the application of the `DTLreactingFoam` framework for detailed laminar flame simulations.
 
 ---
 
