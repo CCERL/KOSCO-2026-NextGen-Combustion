@@ -12,8 +12,9 @@ runApplication chemkinToFoam \
                constant/reactionsGRI constant/thermo.compressibleGasGRI
 
 runApplication blockMesh
-runApplication -o $application
+runApplication setFields
 
 decomposePar
 mpirun -np 4 "$application" -parallel
+reconstructPar
 #------------------------------------------------------------------------------
