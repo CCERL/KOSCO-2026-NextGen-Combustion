@@ -20,8 +20,6 @@ internalField   uniform 101325;
 
 boundaryField
 {
-    #includeEtc "caseDicts/setConstraintTypes"
-
     fuel
     {
         type            zeroGradient;
@@ -34,6 +32,10 @@ boundaryField
     {
         type            totalPressure;
         p0              $internalField;
+    }
+    frontAndBack
+    {
+        type            empty;
     }
 }
 

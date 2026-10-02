@@ -20,8 +20,6 @@ internalField   uniform 2000;
 
 boundaryField
 {
-    #includeEtc "caseDicts/setConstraintTypes"
-
     fuel
     {
         type            fixedValue;
@@ -37,6 +35,10 @@ boundaryField
         type            inletOutlet;
         inletValue      uniform 300;
         value           uniform 300;
+    }
+    frontAndBack
+    {
+        type            empty;
     }
 }
 
