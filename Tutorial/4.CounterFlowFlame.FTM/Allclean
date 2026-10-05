@@ -1,0 +1,10 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+# Source tutorial clean functions
+. $WM_PROJECT_DIR/bin/tools/CleanFunctions
+
+cleanCase && rm -rf 0/Qdot 0/uniform
+
+cd constant && rm -rf reactions && rm -rf thermo.DTM && rm -rf thermo.FTM && rm -rf TranportCoeffDict
+#------------------------------------------------------------------------------

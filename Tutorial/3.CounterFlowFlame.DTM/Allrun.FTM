@@ -1,0 +1,39 @@
+#!/bin/sh
+cd "${0%/*}" || exit 1
+
+. "$WM_PROJECT_DIR/bin/tools/RunFunctions"
+
+application=$(getApplication)
+
+properties="constant/physicalProperties"
+originalProperties="constant/physicalProperties.ori"
+
+if [ ! -f "$originalProperties" ]
+then
+    echo "Error: $originalProperties does not exist."
+    exit 1
+fi
+
+if [ ! -f constant/thermo.FTM ]
+then
+    echo "Error: constant/thermo.FTM does not exist."
+    echo "Run ./Allprepare.FTM first."
+    exit 1
+fi
+
+# Activate the FTM configuration
+cp "$originalProperties" "$properties"
+
+sed -i \
+    -e '/^[[:space:]]*usingCoTHERM[[:space:]]/s/false/true/' \
+    -e '/^[[:space:]]*mixture[[:space:]]/s/DTMMulticomponentMixture/FTMMulticomponentMixture/' \
+    -e '/^[[:space:]]*transport[[:space:]]/s/DTMTransport/FTMTransport/' \
+    -e '/^[[:space:]]*#include[[:space:]]/s/thermo.DTM/thermo.FTM/' \
+    "$properties"
+
+runApplication -o blockMesh
+runApplication -o decomposePar
+mpirun -np 4 "$application" -parallel
+runApplication -o reconstructPar
+
+#------------------------------------------------------------------------------

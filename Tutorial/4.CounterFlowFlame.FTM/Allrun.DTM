@@ -1,0 +1,23 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+# Set application name
+application=$(getApplication)
+
+# Activate the original DTM configuration
+cp constant/physicalProperties.ori constant/physicalProperties
+
+runApplication DTMchemkinToFoam \
+               chemkin/chem.inp chemkin/therm.dat chemkin/tran.dat chemkin/transportSutherland \
+               constant/reactions constant/thermo.DTM
+
+runApplication blockMesh
+
+runApplication decomposePar
+mpirun -np 4 "$application" -parallel
+runApplication reconstructPar
+
+#------------------------------------------------------------------------------
