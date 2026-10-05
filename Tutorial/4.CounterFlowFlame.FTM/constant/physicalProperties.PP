@@ -16,7 +16,7 @@ FoamFile
 
 usingDetailedTransportModel  true;
 usingCoTHERM                 false;
-usingPreProcessingFTM        false;
+usingPreProcessingFTM        true;
 majorSpeciesForCoTHERM (H2 O2 H2O);
 
 epsilonT          0.2;   // [K]
@@ -27,7 +27,7 @@ thermoType
 {
     type            hePsiThermo;
     mixture         DTMMulticomponentMixture;
-    transport       DTMTransport;
+    transport       preprocessingFTMTransport;
     thermo          janaf;
     energy          sensibleEnthalpy;
     equationOfState perfectGas;
