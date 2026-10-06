@@ -14,6 +14,25 @@ Through these cases, users can learn the basic OpenFOAM case structure, simulati
 
 ## Tutorial Cases
 
+### 1. [Lid-Driven Cavity](Tutorial/1.Cavity)
+
+A basic incompressible-flow case using `incompressibleFluid`, introducing the OpenFOAM case structure, numerical setup, and execution workflow.
+
+### 2. [Sandia Flame D](Tutorial/2.SandiaFlameD)
+
+A turbulent reacting-flow case using `multicomponentFluid`, introducing chemical kinetics, thermophysical properties, and combustion modeling.
+
+### 3. [H₂/Air Counterflow Flame](Tutorial/3.CounterFlowFlame.DTM)
+
+A laminar opposed-flow flame using `DTLreactingFoam`, introducing detailed chemistry and species transport.
+
+### 4. [FTM and CoTHERM](Tutorial/4.CounterFlowFlame.FTMCO)
+
+An extension of Case 3 using the same flame configuration, introducing FTM preprocessing and the use of FTM and CoTHERM in `DTLreactingFoam`.
+
+
+## Tutorial Cases
+
 | Case | Configuration | Solver | Key topics |
 |---|---|---|---|
 | [1.Cavity](Tutorial/1.Cavity) | 2-D cavity | `incompressibleFluid` | Case setup and numerics |
@@ -61,17 +80,3 @@ cd KOSCO-2026-NextGen-Combustion
 `$FOAM_RUN` is the user run directory defined by the OpenFOAM environment.
 
 ---
-
-## Notes for the tutorial
-
-These cases are intentionally compact so that the important OpenFOAM settings can be inspected directly.
-
-Rather than treating the case files as black boxes, participants are encouraged to compare:
-
-- mesh and boundary-condition definitions,
-- incompressible and reacting-flow solver structures,
-- thermophysical and chemistry models,
-- numerical schemes and timestep settings,
-- serial and MPI execution workflows.
-
-The three cases are intended to provide a gradual path from a basic OpenFOAM CFD calculation to detailed reacting-flow simulations.
