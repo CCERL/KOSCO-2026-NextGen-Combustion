@@ -48,7 +48,9 @@ To remove the generated mesh and simulation results:
 The following files and directories are particularly useful for understanding the case setup:
 
 - `0/` — initial fields and boundary conditions
-- `chemkin/` — chemical mechanism, thermodynamic, and transport data
+- `chemkin/chem.inp` — chemical species and reaction mechanism
+- `chemkin/therm.dat` — species thermodynamic data
+- `chemkin/transportSutherlands` — species transport data for the Sutherland model
 - `constant/physicalProperties` — thermophysical and transport model configuration
 - `constant/chemistryProperties` — chemistry model configuration
 - `constant/combustionProperties` — combustion model configuration
@@ -56,4 +58,3 @@ The following files and directories are particularly useful for understanding th
 - `system/blockMeshDict` — computational mesh configuration
 - `system/setFieldsDict` — field initialization configuration
 - `system/decomposeParDict` — domain decomposition configuration
-- `system/controlDict` — simulation and run-time contro
