@@ -19,17 +19,15 @@ cd $FOAM_RUN/KOSCO-2026-NextGen-Combustion/Tutorial/1.Cavity
 ./Allrun
 ```
 
-The `Allrun` script automates the following workflow:
+The `Allrun` script executes the following commands sequentially:
 
 ```text
-Mesh generation using the OpenFOAM `blockMesh` utility
+blockMesh
       ↓
-Read the application specified in `system/controlDict`
-      ↓
-Run the simulation using the `incompressibleFluid` module
-      ↓
-Simulation results
+foamRun
 ```
+
+The script generates the computational mesh and runs the simulation using the `incompressibleFluid` module.
 
 To remove the generated mesh and simulation results:
 

@@ -19,24 +19,23 @@ cd $FOAM_RUN/KOSCO-2026-NextGen-Combustion/Tutorial/2.SandiaFlameD
 ./Allrun
 ```
 
-The `Allrun` script automates the following workflow:
+The `Allrun` script executes the following commands sequentially:
 
 ```text
-Convert CHEMKIN chemistry and thermodynamic data
-using the OpenFOAM `chemkinToFoam` utility
+chemkinToFoam
       ↓
-Mesh generation using the OpenFOAM `blockMesh` utility
+blockMesh
       ↓
-Initialize the solution fields using the OpenFOAM `setFields` utility
+setFields
       ↓
-Domain decomposition using `decomposePar`
+decomposePar
       ↓
-Run the simulation in parallel using the `multicomponentFluid` module
+mpirun
       ↓
-Reconstruct the decomposed results using `reconstructPar`
-      ↓
-Simulation results
+reconstructPar
 ```
+
+The script converts the CHEMKIN mechanism into the OpenFOAM format, generates the computational mesh, initializes the solution fields, decomposes the domain, runs the simulation in parallel using the `multicomponentFluid` module, and reconstructs the decomposed results.
 
 To remove the generated mesh and simulation results:
 
