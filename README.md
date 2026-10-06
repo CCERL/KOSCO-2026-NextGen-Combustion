@@ -24,20 +24,11 @@ A turbulent reacting-flow case using `multicomponentFluid`, introducing chemical
 
 ### 3. [H₂/Air Counterflow Flame](Tutorial/3.CounterFlowFlame.DTM)
 
-A laminar opposed-flow flame using `DTLreactingFoam`, introducing detailed chemistry and species transport.
+A laminar counterflow-flame using the `DTLreactingFoam` framework, introducing detailed transport model (DTM).
 
 ### 4. [FTM and CoTHERM](Tutorial/4.CounterFlowFlame.FTMCO)
 
-An extension of Case 3 using the same flame configuration, introducing FTM preprocessing and the use of FTM and CoTHERM in `DTLreactingFoam`.
-
-
-## Tutorial Cases
-
-| Case | Configuration | Solver | Key topics |
-|---|---|---|---|
-| [1.Cavity](Tutorial/1.Cavity) | 2-D cavity | `incompressibleFluid` | Case setup and numerics |
-| [2.SandiaFlameD](Tutorial/2.SandiaFlameD) | Turbulent flame | `multicomponentFluid` | Chemistry and combustion |
-| [3.CounterFlowFlame](Tutorial/3.CounterFlowFlame) | Laminar H₂/air flame | `DTLreactingFoam` | Detailed transport |
+An extension of Case 3 using the same flame configuration, introducing FTM and CoTHERM in `DTLreactingFoam`.
 
 Refer to each case README for the case description, execution workflow, and files to examine.
 
