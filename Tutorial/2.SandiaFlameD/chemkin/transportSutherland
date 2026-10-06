@@ -8,35 +8,37 @@
 FoamFile
 {
     format      ascii;
-    class       polyBoundaryMesh;
-    location    "constant/polyMesh";
-    object      boundary;
+    class       dictionary;
+    location    "chemkin";
+    object      transportSutherland;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-3
-(
-    movingWall
+".*"
+{
+    transport
     {
-        type            wall;
-        inGroups        List<word> 1(wall);
-        nFaces          20;
-        startFace       760;
+        As 1.512e-06;
+        Ts 120.;
     }
-    fixedWalls
+}
+
+"H2"
+{
+    transport
     {
-        type            wall;
-        inGroups        List<word> 1(wall);
-        nFaces          60;
-        startFace       780;
+        As 6.362e-07;
+        Ts 72.;
     }
-    frontAndBack
+}
+
+"CO2"
+{
+    transport
     {
-        type            empty;
-        inGroups        List<word> 1(empty);
-        nFaces          800;
-        startFace       840;
+        As 1.572e-06;
+        Ts 240.;
     }
-)
+}
 
 // ************************************************************************* //

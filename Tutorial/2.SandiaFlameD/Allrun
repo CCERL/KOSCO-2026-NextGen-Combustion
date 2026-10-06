@@ -8,8 +8,8 @@ cd ${0%/*} || exit 1    # Run from this directory
 application=$(getApplication)
 
 runApplication chemkinToFoam \
-               chemkin/grimech30.dat chemkin/thermo30.dat chemkin/transportProperties \
-               constant/reactionsGRI constant/thermo.compressibleGasGRI
+               chemkin/chem.inp chemkin/therm.dat chemkin/transportSutherland \
+               constant/reactions constant/thermo.STM
 
 runApplication blockMesh
 runApplication setFields

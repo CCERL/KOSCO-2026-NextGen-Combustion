@@ -41,6 +41,6 @@ tabulation
     }
 }
 
-#include "reactionsGRI"
+#include "reactions"
 
 // ************************************************************************* //
