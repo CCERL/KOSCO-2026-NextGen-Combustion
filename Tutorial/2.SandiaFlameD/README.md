@@ -1,3 +1,9 @@
+# 2. Sandia Flame D
+
+This tutorial introduces the OpenFOAM workflow for turbulent reacting-flow simulations using the Sandia Flame D configuration.
+
+The case is simulated using the standard OpenFOAM `multicomponentFluid` module. The primary objective is to become familiar with the additional case setup required for reacting-flow simulations, including thermophysical properties, chemical kinetics, species transport, and combustion modeling.
+
 ## Case description
 
 The computational domain consists of a 2D axisymmetric wedge configuration with separate fuel, pilot, and coflow-air inlets.
