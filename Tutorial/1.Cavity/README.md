@@ -39,14 +39,11 @@ To remove the generated mesh and simulation results:
 
 ## Files to examine
 
-The following files and directories are particularly useful for understanding the case setup:
+The following files are particularly useful for understanding the case setup:
 
-- `0/` — initial and boundary conditions
-- `constant/` — physical and model properties
+- `0/p` — pressure field and boundary conditions
+- `0/U` — velocity field and boundary conditions
+- `constant/momentumTransport` — momentum transport model configuration
+- `constant/physicalProperties` — fluid physical properties
 - `system/blockMeshDict` — computational mesh configuration
-- `system/controlDict` — simulation and application control
-- `system/fvSchemes` — numerical discretization schemes
-- `system/fvSolution` — solution algorithms and linear solver settings
-- `Allrun` — automated case execution script
-- `Allclean` — case cleanup script
-
+- `system/controlDict` — simulation and run-time control
