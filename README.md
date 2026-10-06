@@ -1,12 +1,13 @@
-# 2026 한국연소학회 가을 튜토리얼 Next-Gen Combustion
+# Next-Gen Combustion: OpenFOAM Tutorials
+
+Tutorial materials for the Fall 2026 meeting of the Korean Society of Combustion (KOSCO).
 
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-12-1f6feb)
 ![License](https://img.shields.io/badge/license-GPL--3.0-yellow)
-
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cpc.2026.110052-red)](https://doi.org/10.1016/j.cpc.2026.110052)
 
 ## Overview
-This repository provides tutorial materials for incompressible and reacting-flow simulations using OpenFOAM. The tutorials cover a basic incompressible-flow simulation using `incompressibleFluid`, a turbulent Sandia Flame D simulation using the standard OpenFOAM module `multicomponentFluid`, and a laminar counterflow-flame simulation using the custom-developed `DTLreactingFoam` framework. 
+This repository provides four tutorials for incompressible and reacting-flow simulations using OpenFOAM Foundation v12. The tutorials cover a basic cavity-flow simulation using `incompressibleFluid`, a turbulent Sandia Flame D simulation using `multicomponentFluid`, and two laminar counterflow-flame cases using the `DTLreactingFoam` framework: one with the Detailed Transport Model (DTM), and the other with the polynomial-fit transport model (FTM) and CoTHERM.
 
 Through these cases, users can learn the basic OpenFOAM case structure, simulation setup, numerical workflow, and reacting-flow capabilities, as well as the application of `DTLreactingFoam` to detailed laminar flame simulations.
 
@@ -71,3 +72,14 @@ cd KOSCO-2026-NextGen-Combustion
 `$FOAM_RUN` is the user run directory defined by the OpenFOAM environment.
 
 ---
+
+## Running the tutorials
+
+Enter a case directory and run `Allrun`:
+
+```bash
+cd Tutorial/1.Cavity
+./Allrun
+```
+
+Refer to each case README for its execution workflow and configuration details.
