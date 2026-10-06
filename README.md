@@ -38,34 +38,28 @@ foamVersion
 
 The command should report OpenFOAM-12.
 
-## Requirements
-
-These tutorials are developed for **OpenFOAM Foundation v12** and must be run in a Linux environment.
-
-Windows users must first install **Windows Subsystem for Linux (WSL)**. OpenFOAM Foundation v12 and the [`DTLreactingFoam-12`](https://github.com/danhnam11/DTLreactingFoam-12) framework should then be installed within the WSL environment. `DTLreactingFoam-12` is required to perform laminar reacting-flow simulations with detailed chemistry and multicomponent transport.
-
-Detailed instructions for setting up WSL, installing OpenFOAM 12, and building `DTLreactingFoam-12` are provided in the [OpenFOAM 해석 환경 구축 및 DTLreactingFoam 설치 가이드](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/1.OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf). Complete the setup described in this guide before starting the tutorials.
-
-After completing the installation, open a WSL terminal and verify that the OpenFOAM environment is loaded:
-
-```bash
-foamVersion
-```
-
-The command should report **OpenFOAM-12**.
-
 ---
 
 ## Download
 
-The recommended location is your OpenFOAM run directory:
+Clone the tutorial repository into your OpenFOAM run directory:
 
 ```bash
-mkdir -p $FOAM_RUN
-cd $FOAM_RUN
+# Create the OpenFOAM run directory if it does not exist
+mkdir -p "$FOAM_RUN"
+
+# Move to the OpenFOAM run directory
+cd "$FOAM_RUN"
+
+# Download the tutorial repository
 git clone https://github.com/CCERL/KOSCO-2026-NextGen-Combustion.git
+
+# Move to the downloaded repository
 cd KOSCO-2026-NextGen-Combustion
 ```
+
+`$FOAM_RUN` is the user run directory defined by the OpenFOAM environment.
+
 ---
 
 ## Notes for the tutorial
