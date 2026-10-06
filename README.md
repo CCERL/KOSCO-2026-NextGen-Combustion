@@ -24,15 +24,19 @@ Refer to each case README for the case description, execution workflow, and file
 
 ## Requirements
 
-These tutorials require OpenFOAM Foundation v12 in a Linux environment. Windows users can use Windows Subsystem for Linux (WSL).
+These tutorials require OpenFOAM Foundation v12 in a Linux environment. Windows users must first install **Windows Subsystem for Linux (WSL)** and set up OpenFOAM within WSL.
 
-Cases 3 and 4 additionally require [DTLreactingFoam-12](https://github.com/CCERL/DTLreactingFoam-12).
+Cases 3 and 4 additionally require [`DTLreactingFoam-12`](https://github.com/danhnam11/DTLreactingFoam-12).
 
-Before running the tutorials, verify that the OpenFOAM environment is loaded:
+Follow the [installation guide](https://github.com/CCERL/KOSCO-2026-NextGen-Combustion/blob/main/Documentation/Prerequisites/1.OpenFOAM%20해석%20환경%20구축%20및%20DTLreactingFoam%20설치%20가이드.pdf) to set up WSL, install OpenFOAM 12, and build `DTLreactingFoam-12` before starting the tutorials.
+
+Verify that the OpenFOAM environment is loaded:
 
 ```bash
 foamVersion
 ```
+
+The command should report OpenFOAM-12.
 
 ## Requirements
 
