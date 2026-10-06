@@ -15,25 +15,21 @@ This configuration provides a simple example for examining the fundamental compo
 From the tutorial directory:
 
 ```bash
-cd 1.Cavity
+cd $FOAM_RUN/KOSCO-2026-NextGen-Combustion/Tutorial/1.Cavity
 ./Allrun
 ```
 
 The `Allrun` script automates the following workflow:
 
 ```text
-Mesh generation
-(`blockMesh`)
+Mesh generation using the OpenFOAM `blockMesh` utility
       ↓
-Read the application specified in
-`system/controlDict`
+Read the application specified in `system/controlDict`
       ↓
-Run the simulation
+Run the simulation using the `incompressibleFluid` module
       ↓
 Simulation results
 ```
-
-The application to be executed is automatically identified from the `application` entry in `system/controlDict` using the OpenFOAM `getApplication` function.
 
 To remove the generated mesh and simulation results:
 
