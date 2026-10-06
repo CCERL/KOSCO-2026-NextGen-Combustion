@@ -20,7 +20,19 @@ Through these cases, users can learn the basic OpenFOAM case structure, simulati
 | [2.SandiaFlameD](Tutorial/2.SandiaFlameD) | Turbulent flame | `multicomponentFluid` | Chemistry and combustion |
 | [3.CounterFlowFlame](Tutorial/3.CounterFlowFlame) | Laminar H₂/air flame | `DTLreactingFoam` | Detailed transport |
 
----
+Refer to each case README for the case description, execution workflow, and files to examine.
+
+## Requirements
+
+These tutorials require OpenFOAM Foundation v12 in a Linux environment. Windows users can use Windows Subsystem for Linux (WSL).
+
+Cases 3 and 4 additionally require [DTLreactingFoam-12](https://github.com/CCERL/DTLreactingFoam-12).
+
+Before running the tutorials, verify that the OpenFOAM environment is loaded:
+
+```bash
+foamVersion
+```
 
 ## Requirements
 
@@ -50,81 +62,6 @@ cd $FOAM_RUN
 git clone https://github.com/CCERL/KOSCO-2026-NextGen-Combustion.git
 cd KOSCO-2026-NextGen-Combustion
 ```
-
----
-
-## 1. Lid-Driven Cavity
-
-[`1.Cavity`](Tutorial/1.Cavity) is a compact introductory case for reviewing the basic structure of an OpenFOAM simulation.
-
-The domain is a **2-D square cavity**. The upper wall moves in the positive x-direction while the remaining walls are stationary.
-
-The simulation is performed using standard `incompressibleFluid` module in OpenFOAM-12.
-
-### Run
-
-```bash
-cd 1.Cavity
-./Allrun
-```
-
-## 2. Sandia Flame D
-
-[`2.SandiaFlameD`](Tutorial/2.SandiaFlameD) introduces a reacting-flow calculation based on the well-known **Sandia Flame D** configuration.
-
-The case uses an axisymmetric wedge mesh with separate methane-fuel, pilot, and coflow-air inlets.
-
-The simulation is performed using standard `multicomponentFluid` module in OpenFOAM-12.
-
-### Run
-
-```bash
-cd 2.SandiaFlameD
-./Allrun
-```
-
-## 3. H₂/Air Counterflow Flame
-
-[`3.CounterFlowFlame`](Tutorial/3.CounterFlowFlame) is an opposed-flow reacting case in which a hydrogen-containing fuel stream and an air stream enter from opposite sides of the domain.
-
-The supplied inlet velocities are:
-```text
-fuel : 0.5 m/s
-air  : 0.5 m/s
-```
-Both inlet temperatures are initialized at `300 K`. A hot internal field is supplied to initialize the reacting region.
-
-The fuel-side hydrogen mass fraction is:
-```text
-Y_H2 = 0.0673
-```
-
-while the air-side oxygen mass fraction is:
-```text
-Y_O2 = 0.23
-```
-
-The simulation is performed using custom `DTLreactingFoam` solver.
-
-### Run
-
-```bash
-cd 3.CounterFlowFlame
-./Allrun
-```
-
-Parallel execution can be performed in the same way:
-
-```bash
-cd 3.counterFlowFlame
-
-blockMesh
-decomposePar
-mpirun -np 4 foamRun -parallel
-reconstructPar
-rm -r processor*
-```
-
 ---
 
 ## Notes for the tutorial
