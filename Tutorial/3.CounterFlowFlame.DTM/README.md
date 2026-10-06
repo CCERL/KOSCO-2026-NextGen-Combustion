@@ -46,13 +46,9 @@ To remove the generated mesh and simulation results:
 
 ## Files to examine
 
-The following files are particularly useful for understanding the case setup:
+The following files and directories are particularly useful for understanding the case setup:
 
-- `chemkin/chem.inp` — chemical mechanism, thermodynamic, and transport data
-- `chemkin/therm.dat` — chemical mechanism, thermodynamic, and transport data
-- `chemkin/tran.dat` — chemical mechanism, thermodynamic, and transport data
-- `chemkin/transportSutherlands` — chemical mechanism, thermodynamic, and transport data
+- `chemkin/` — chemical mechanism, thermodynamic, and transport input data
+- `chemkin/tran.dat` — CHEMKIN transport parameters for individual species
 - `constant/physicalProperties` — thermophysical and detailed transport model configuration
-- `constant/physicalProperties` — thermophysical and detailed transport model configuration
-- `constant/physicalProperties` — thermophysical and detailed transport model configuration
-- `chemkin/` — chemical mechanism, thermodynamic, and transport data
+- `constant/thermo.DTM` — generated species thermodynamic and detailed transport properties

@@ -10,6 +10,7 @@ then
 fi
 application=$(getApplication) || exit 1
 [ -n "$application" ] || exit 1
+
 # Restore the supplied baseline if preparation fails or is interrupted.
 restoreProperties()
 {
@@ -27,6 +28,7 @@ trap 'exit 129' HUP
 trap 'exit 130' INT
 trap 'exit 143' TERM
 cp "$preprocessProperties" "$properties" || exit 1
+
 runApplication -o DTMchemkinToFoam \
     chemkin/chem.inp \
     chemkin/therm.dat \
@@ -35,6 +37,7 @@ runApplication -o DTMchemkinToFoam \
     constant/reactions \
     constant/thermo.DTM || exit 1
 runApplication -o blockMesh || exit 1
+
 # Activate FTM preprocessing (the supplied .PP already has these values).
 sed -i \
     -e '/^[[:space:]]*usingPreProcessingFTM[[:space:]]/s/false/true/' \
@@ -47,6 +50,7 @@ then
     echo "Error: constant/thermo.FTM was not generated." >&2
     exit 1
 fi
+
 # Discard temporary preprocessing edits before configuring the simulation.
 cp "$preprocessProperties" "$properties" || exit 1
 sed -i \
@@ -56,6 +60,7 @@ sed -i \
     -e '/^[[:space:]]*transport[[:space:]]/s/preprocessingFTMTransport/FTMTransport/' \
     -e '/^[[:space:]]*#include[[:space:]]/s/thermo.DTM/thermo.FTM/' \
     "$properties" || exit 1
+
 # Keep the FTMCO configuration for the simulation and its results.
 trap - 0 HUP INT TERM
 echo "Generated constant/thermo.FTM successfully."
