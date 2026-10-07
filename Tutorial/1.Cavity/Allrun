@@ -10,4 +10,5 @@ application=$(getApplication)
 runApplication blockMesh
 runApplication -o $application
 
+touch cavity.foam
 #------------------------------------------------------------------------------

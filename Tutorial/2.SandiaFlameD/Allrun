@@ -17,4 +17,6 @@ runApplication setFields
 decomposePar
 mpirun -np 4 "$application" -parallel
 reconstructPar
+
+touch reacting.foam
 #------------------------------------------------------------------------------

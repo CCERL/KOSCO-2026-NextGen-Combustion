@@ -67,4 +67,6 @@ echo "Generated constant/thermo.FTM successfully."
 runApplication -o decomposePar || exit 1
 mpirun -np 4 "$application" -parallel || exit 1
 runApplication -o reconstructPar || exit 1
+
+touch FTMCO.foam
 #------------------------------------------------------------------------------
