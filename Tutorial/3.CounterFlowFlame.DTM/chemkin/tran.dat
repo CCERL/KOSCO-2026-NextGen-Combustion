@@ -1,3 +1,5 @@
+! Species   Geometry   epsilon/kB [K]   sigma [Angstrom]   Dipole [Debye]   Polarizability [Angstrom^3]   Zrot at 298 K
+! Geometry: 0 = monatomic, 1 = linear, 2 = nonlinear
 AR                 0   136.500     3.330     0.000     0.000     0.000
 AS                 0  1045.500     4.580     0.000     0.000     0.000 ! MEC
 ASH                1   199.300     4.215     0.000     0.000     1.000 ! MEC
