@@ -14,22 +14,17 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-// EDC configuration
-combustionModel  EDC;
+combustionModel  EDC;	// For EDC
+//combustionModel PaSR;	// For PaSR
 
 EDCCoeffs
 {
     version v2005;	// EDC model version
 }
 
-// PaSR configuration
-/*
-combustionModel PaSR;
-
 PaSRCoeffs
 {
     Cmix                    0.1;	// Mixing time-scale coefficient
     integrateReactionRate   true;	// Integrate chemical reaction
 }
-*/
 // ************************************************************************* //
