@@ -1,4 +1,9 @@
 #!/bin/sh
+
+runApplication DTMchemkinToFoam \
+               chemkin/chem.inp chemkin/therm.dat chemkin/tran.dat chemkin/transportSutherland \
+               constant/reactions constant/thermo.DTM
+
 cd "${0%/*}" || exit 1
 . "${WM_PROJECT_DIR:?Load the OpenFOAM environment first}/bin/tools/RunFunctions" || exit 1
 properties="constant/physicalProperties"
